@@ -17,11 +17,11 @@ namespace Problème2024
             string[] fichier;
             if (langue == "français")
             {
-                fichier= File.ReadAllLines("C:\Users\hp\Documents\GitHub\A2D-BOOGLE-\Lettres.txt");//: voir car elle n'aura pas le même chemin
+                fichier= File.ReadAllLines("Lettres.txt");
             }
             else
             {
-                fichier = File.ReadAllLines("C:\Users\hp\Documents\GitHub\A2D-BOOGLE-\Lettres.txt");//: voir car elle n'aura pas le même chemin
+                fichier = File.ReadAllLines("Lettres.txt");
             }
             for (int i = 0; i < fichier.Length; i++)
             {

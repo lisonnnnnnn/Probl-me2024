@@ -17,11 +17,11 @@ namespace Problème2024
             string fichierDico;
             if (langue == "english")
             {
-                fichierDico = File.ReadText("MotsPossiblesEN");
+                fichierDico = File.ReadAllText("MotsPossiblesEN");
             }
             else 
             {
-                fichierDico = File.ReadText("MotsPossiblesFR");
+                fichierDico = File.ReadAllText("MotsPossiblesFR");
             }
             List<string> mots = new List<string>();
             while (fichierDico != null || fichierDico.Length > 0)
