@@ -14,15 +14,16 @@ namespace Problème2024
         public Dictionnaire(string langue)
         {
             this.langue = langue;
-            if (langue == "français")
+            string fichierDico;
+            if (langue == "english")
             {
-                string fichierDico = File.ReadText("MotsPossiblesFR");
+                fichierDico = File.ReadText("MotsPossiblesEN");
             }
-            else if (langue == "english")
+            else 
             {
-                string fichierDico = File.ReadText("MotsPossiblesFR");
+                fichierDico = File.ReadText("MotsPossiblesFR");
             }
-            List<string> mots = new List<string>;
+            List<string> mots = new List<string>();
             while (fichierDico != null || fichierDico.Length > 0)
             {
                 int indexEspace = fichierDico.IndexOf(" ");
@@ -64,7 +65,7 @@ namespace Problème2024
         }
         public string toString()
         {
-            return $"Ce dictionnaire est en {langue}, "; //: comment ça nombre de mots par longueur etle nombre de mots par lettre
+            return $"Ce dictionnaire est en {langue}, "; //: comment ça nombre de mots par longueur etle nombre de mots par symboleLettre
         }
         public bool RechDichoRecursif(string mot)
         {

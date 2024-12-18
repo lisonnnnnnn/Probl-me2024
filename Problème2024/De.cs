@@ -11,15 +11,15 @@ namespace Problème2024
         private char[] sixFaces;
         private char faceVisible;
 
-        public De(Random r)
+        public De(Random r, Alphabet alphabet)
         {
             sixFaces = new char[6];
 
             for (int i = 0; i < 6; i++)
             {
-                int indiceLettreAleatoire = r.Next(Alphabet.Possibilites.Count - 1);
-                sixFaces[i] = Alphabet.Possibilites[indiceLettreAleatoire];
-                Alphabet.Possibilites.RemoveAt(indiceLettreAleatoire);
+                int indiceLettreAleatoire = r.Next(alphabet.Possibilites.Count - 1);
+                sixFaces[i] = alphabet.Possibilites[indiceLettreAleatoire];
+                alphabet.Possibilites.RemoveAt(indiceLettreAleatoire);
             }
             Lance(r);
         }
