@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Problème2024
 {
-    internal class Plateau
+    public class Plateau
     {
         private De[] setDeDes;
         private char[,] plateauActif;

@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace TestUni_Boogle
+namespace Problème2024
 {
     [TestClass]
     public class UnitTest1
@@ -9,7 +9,6 @@ namespace TestUni_Boogle
         [TestMethod]
         public void TestMethod1()
         {
-
         }
     }
 }

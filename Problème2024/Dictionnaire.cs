@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Problème2024
 {
-    internal class Dictionnaire
+    public class Dictionnaire
     {
         private string langue;
         private List<string> mots;

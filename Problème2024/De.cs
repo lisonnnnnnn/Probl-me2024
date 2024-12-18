@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Problème2024
 {
-    internal class De
+    public class De
     {
         private char[] sixFaces;
         private char faceVisible;

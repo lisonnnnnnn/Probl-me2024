@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Problème2024
 {
-    internal class Alphabet
+    public class Alphabet
     {
         private Lettre[] lettres;
         private List<char> possibilites;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Problème2024
 {
-    internal class Joueur
+    public class Joueur
     {
         private string nom;
         private int score;
