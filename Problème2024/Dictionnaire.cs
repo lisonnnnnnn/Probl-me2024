@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
 namespace Problème2024
 {
@@ -15,14 +14,14 @@ namespace Problème2024
         public Dictionnaire(string langue)
         {
             this.langue = langue;
-            string fichierDico;
+            string fichierDico="";
             if (langue == "english")
             {
-                fichierDico = File.ReadAllText("MotsPossiblesEN");
+                fichierDico = File.ReadAllText("Ressources\\MotsPossiblesEN.txt");
             }
             else 
             {
-                fichierDico = File.ReadAllText("MotsPossiblesFR");
+                fichierDico = File.ReadAllText("C:\\AlgoPooProjet\\Probl-me2024\\Problème2024\\Ressources\\MotsPossiblesFR.txt");
             }
             List<string> mots = new List<string>();
             while (fichierDico != null || fichierDico.Length > 0)
@@ -44,8 +43,7 @@ namespace Problème2024
                 }
             }
             mots.Sort();
-            dicoTrie = TrieNumeraire(mots);
-            this.dicoTrie = dicoTrie;
+            this.dicoTrie = TrieNumeraire(mots);
         }
         public static SortedList<int, List<string>> TrieNumeraire(List<string> dico)
         {

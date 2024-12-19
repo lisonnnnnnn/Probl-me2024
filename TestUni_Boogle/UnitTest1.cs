@@ -9,6 +9,7 @@ namespace Problème2024
         [TestMethod]
         public void TestMethod1()
         {
+            
         }
     }
 }
