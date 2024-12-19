@@ -75,7 +75,7 @@ namespace Problème2024
             List<string> listeDroite = listeMots.GetRange(milieu, listeMots.Count - milieu);
             listeGauche=TriFusion(listeGauche);
             listeDroite=TriFusion(listeDroite);
-            return TriFusion(listeGauche, listeDroite);
+            return Fusion(listeGauche, listeDroite);
         }
         public static List<string> Fusion(List<string> listeGauche, List<string> listeDroite)
         {
