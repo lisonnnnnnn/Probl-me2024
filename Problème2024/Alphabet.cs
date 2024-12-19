@@ -18,11 +18,11 @@ namespace Problème2024
             string[] fichier;
             if (langue == "français")
             {
-                fichier= File.ReadAllLines("Lettres.txt");
+                fichier= File.ReadAllLines("Ressources\\Lettres.txt");
             }
             else
             {
-                fichier = File.ReadAllLines("Lettres.txt");
+                fichier = File.ReadAllLines("Ressources\\Lettres.txt");
             }
             for (int i = 0; i < fichier.Length; i++)
             {

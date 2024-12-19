@@ -58,13 +58,23 @@ namespace Problème2024
         }
         public void AfficherPlateauActif()
         {
+            string frontiere = "";
+            for (int i=0 ; i < taillePlateau; i++)
+            {
+                frontiere += "+----";
+            }
+            frontiere += "+";
+            Console.WriteLine(frontiere);
             for (int j = 0; j < taillePlateau; j++)
             {
                 for (int k = 0; k < taillePlateau; k++)
                 {
-                    Console.WriteLine(plateauActif[j, k] + " ");
+                    Console.Write("| "+plateauActif[j, k] + " ");
                 }
+                Console.WriteLine("|");
+                Console.WriteLine(frontiere);
             }
+            Console.WriteLine(frontiere );
         }
         /// <summary>
         /// La méthode Test_Plateau permet de vérifier si le mot entré par le joueur existe sur le plateau de jeu.

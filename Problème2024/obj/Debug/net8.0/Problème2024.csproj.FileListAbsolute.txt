@@ -1,0 +1,15 @@
+C:\AlgoPooProjet\Probl-me2024\Problème2024\bin\Debug\net8.0\Problème2024.exe
+C:\AlgoPooProjet\Probl-me2024\Problème2024\bin\Debug\net8.0\Problème2024.deps.json
+C:\AlgoPooProjet\Probl-me2024\Problème2024\bin\Debug\net8.0\Problème2024.runtimeconfig.json
+C:\AlgoPooProjet\Probl-me2024\Problème2024\bin\Debug\net8.0\Problème2024.dll
+C:\AlgoPooProjet\Probl-me2024\Problème2024\bin\Debug\net8.0\Problème2024.pdb
+C:\AlgoPooProjet\Probl-me2024\Problème2024\obj\Debug\net8.0\Problème2024.GeneratedMSBuildEditorConfig.editorconfig
+C:\AlgoPooProjet\Probl-me2024\Problème2024\obj\Debug\net8.0\Problème2024.AssemblyInfoInputs.cache
+C:\AlgoPooProjet\Probl-me2024\Problème2024\obj\Debug\net8.0\Problème2024.AssemblyInfo.cs
+C:\AlgoPooProjet\Probl-me2024\Problème2024\obj\Debug\net8.0\Problème2024.csproj.CoreCompileInputs.cache
+C:\AlgoPooProjet\Probl-me2024\Problème2024\obj\Debug\net8.0\Problème2024.sourcelink.json
+C:\AlgoPooProjet\Probl-me2024\Problème2024\obj\Debug\net8.0\Problème2024.dll
+C:\AlgoPooProjet\Probl-me2024\Problème2024\obj\Debug\net8.0\refint\Problème2024.dll
+C:\AlgoPooProjet\Probl-me2024\Problème2024\obj\Debug\net8.0\Problème2024.pdb
+C:\AlgoPooProjet\Probl-me2024\Problème2024\obj\Debug\net8.0\Problème2024.genruntimeconfig.cache
+C:\AlgoPooProjet\Probl-me2024\Problème2024\obj\Debug\net8.0\ref\Problème2024.dll
