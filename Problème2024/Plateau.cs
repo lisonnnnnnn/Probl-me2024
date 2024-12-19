@@ -99,14 +99,15 @@ namespace Problème2024
         /// le retour de la méthode elle même avec comme argument le mot sans le premier caractère, la position sur laquelle on travaille, le plateau binaire marqué
         /// du chemin. Enfin on remet la case marquée du plateauBinaire à 0 pour que le prochain chemin potentiel ne soit pas impacté.
         /// </returns>
-        public bool Test_Plateau(string mot, Position posActuelle = null, int[,] plateauBinaire = null)
+        public bool Test_Plateau(string mot, Position posActuelle = null, bool[,] plateauBinaire = null)
         {
             bool cheminExiste = false;
             char premiereLettre = mot[0];
             List<Position> posPossible=new List<Position>();
+
             if (plateauBinaire == null)
             {
-                plateauBinaire=new int[taillePlateau, taillePlateau];
+                plateauBinaire=new bool[taillePlateau, taillePlateau];
             }
             if (posActuelle==null)
             {
@@ -127,7 +128,7 @@ namespace Problème2024
                 {
                     for (int j = posActuelle.Y - 1; j <= posActuelle.Y + 1; j++)
                     {
-                        if ((i != posActuelle.X || j != posActuelle.Y) && i >= 0 && j >= 0 && i < taillePlateau && j < taillePlateau && plateauBinaire[i, j] == 0 && premiereLettre == plateauActif[i, j])
+                        if ((i != posActuelle.X || j != posActuelle.Y) && i >= 0 && j >= 0 && i < taillePlateau && j < taillePlateau && !plateauBinaire[i, j] && premiereLettre == plateauActif[i, j])
                         {
                             if (mot.Length > 1)
                             {
@@ -141,9 +142,13 @@ namespace Problème2024
                     }
                 }
             }
+            if(posPossible.Count == 0)
+            {
+                return false;
+            }
             foreach (Position pos in posPossible)
             {
-                plateauBinaire[pos.X, pos.Y] = 1;
+                plateauBinaire[pos.X, pos.Y] = true;
                 cheminExiste = cheminExiste || Test_Plateau(mot.Substring(1), pos, plateauBinaire);
                 plateauBinaire[pos.X, pos.Y] = 0;
             }
