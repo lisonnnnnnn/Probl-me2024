@@ -71,7 +71,11 @@ namespace Problème2024
         }
         public bool RechDichoRecursifBrutal(string mot, int indice = 0)
         {
-            if (dicoTrie[mot.Length][indice] != null && dicoTrie[mot.Length][indice] == mot)
+            if(!dicoTrie.ContainsKey(mot.Length) || indice >= dicoTrie[mot.Length].Count)
+            {
+                return false;
+            }
+            else if (dicoTrie[mot.Length][indice] != null && dicoTrie[mot.Length][indice] == mot)
             {
                 return true;
             }
