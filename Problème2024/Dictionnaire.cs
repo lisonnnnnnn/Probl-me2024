@@ -10,7 +10,7 @@ namespace Problème2024
     public class Dictionnaire
     {
         private string langue;
-        private List<string> mots;
+        private SortedList<int,List<string>> dicoTrie;
 
         public Dictionnaire(string langue)
         {
@@ -44,8 +44,7 @@ namespace Problème2024
                 }
             }
             mots.Sort();
-            SortedList<int, List<string>> dicoTrie = TrieNumeraire(mots);
-
+            dicoTrie = TrieNumeraire(mots);
         }
         public static SortedList<int, List<string>> TrieNumeraire(List<string> dico)
         {
@@ -68,9 +67,16 @@ namespace Problème2024
         {
             return $"Ce dictionnaire est en {langue}, "; //: comment ça nombre de mots par longueur etle nombre de mots par symboleLettre
         }
-        public bool RechDichoRecursif(string mot)
+        public bool RechDichoRecursif(string mot, int indice = 0)
         {
-
+            if (dicoTrie[mot.Length][indice] != null && dicoTrie[mot.Length][indice] = mot)
+            {
+                return true;
+            }
+            else
+            {
+                return RechDichoRecursif(mot, indice++);
+            }
         }
     }
 }

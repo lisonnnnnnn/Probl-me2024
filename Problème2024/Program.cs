@@ -14,7 +14,7 @@ public class Program
         switch (langue)
         {
             case "1":
-                dictionnaire = new Dictionnaire("français"); //: voir la création du dico au niveau du choix de la langue : comment renvoyer au bon fichier directement ?
+                dictionnaire = new Dictionnaire("français");
                 break;
             case "2":
                 dictionnaire = new Dictionnaire("english");
