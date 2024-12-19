@@ -11,10 +11,12 @@ namespace Problème2024
         private De[] setDeDes;
         private char[,] plateauActif;
         private int taillePlateau;
+        private Random r;
 
         public Plateau(int taillePlateau, Random r, Alphabet alphabet)
         {
             this.taillePlateau = taillePlateau;
+            this.r = r;
             this.setDeDes = new De[taillePlateau * taillePlateau];
             for (int i = 0; i < setDeDes.Length; i++)
             {
@@ -48,7 +50,7 @@ namespace Problème2024
             {
                 for (int j = 0; j < taillePlateau; j++)
                 {
-                    SetDeDes[indice] = Lance(r);
+                    SetDeDes[indice] = De.Lance(r);
                     plateauActif[i, j] = setDeDes[indice].FaceVisible;
                     indice++;
                 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Problème2024
 {
@@ -17,11 +18,11 @@ namespace Problème2024
             string fichierDico;
             if (langue == "english")
             {
-                fichierDico = File.ReadText("MotsPossiblesEN");
+                fichierDico = File.ReadAllText("MotsPossiblesEN");
             }
             else 
             {
-                fichierDico = File.ReadText("MotsPossiblesFR");
+                fichierDico = File.ReadAllText("MotsPossiblesFR");
             }
             List<string> mots = new List<string>();
             while (fichierDico != null || fichierDico.Length > 0)
