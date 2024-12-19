@@ -45,6 +45,7 @@ namespace Problème2024
             }
             mots.Sort();
             dicoTrie = TrieNumeraire(mots);
+            this.dicoTrie = dicoTrie;
         }
         public static SortedList<int, List<string>> TrieNumeraire(List<string> dico)
         {
@@ -58,7 +59,8 @@ namespace Problème2024
                 }
                 else
                 {
-                    dicoTrie[longueur] = new List<string> { mot };
+
+                    dicoTrie.Add(longueur, new List<string> { mot });
                 }
             }
             return dicoTrie;
@@ -67,15 +69,58 @@ namespace Problème2024
         {
             return $"Ce dictionnaire est en {langue}, "; //: comment ça nombre de mots par longueur etle nombre de mots par symboleLettre
         }
-        public bool RechDichoRecursif(string mot, int indice = 0)
+        public bool RechDichoRecursifBrutal(string mot, int indice = 0)
         {
-            if (dicoTrie[mot.Length][indice] != null && dicoTrie[mot.Length][indice] = mot)
+            if (dicoTrie[mot.Length][indice] != null && dicoTrie[mot.Length][indice] == mot)
             {
                 return true;
             }
             else
             {
-                return RechDichoRecursif(mot, indice++);
+                return RechDichoRecursifBrutal(mot, indice++);
+            }
+        }
+        /// <summary>
+        /// Cette fonction permet de vérifier si un mot est dans le dictionnaire en utilisant le principe de diviser pour régner
+        /// Si le mot est d'une longueur qui n'existe pas dans le dico, ou si l'indice de début a dépassé celui de la fin, ce qu'il 
+        /// se passe après n'avoir pas trouvé le mot dans un intervalle de taille 1, alors le mot n'y est pas 
+        /// sinon, si le mot est dans la première moitié, on déplace les indices pour ne vérifier qu'à un intervalle de taille1, et alors
+        /// on vérifie si le mot qu'il reste est celui qu'on cherchait, ou tomber sur le mot qu'on cherche en coupant la liste en deux, ou 
+        /// bien si on ne le trouve pas alors debut va dépasser fin.
+        /// </summary>
+        /// <param name="mot">Mot à tester</param>
+        /// <param name="debut">Indice de début de l'intervalle de la liste à vérifier. Initialisé à -1 pour le fonctionnement de l'algo</param>
+        /// <param name="fin">Indice de début de l'intervalle de la liste à vérifier. Initialisé à -1 pour le fonctionnement de l'algo</param>
+        /// En effet, si on les assigne directemnet on risque une erreur si la longueur du mot n'existe pas dans le dictionnaire
+        /// <returns>On analyse à chaque fois la moitié de la liste dans laquelle se trouve le mot, jusqu'à tomber sur les cas décris ci-dessus</returns>
+        public bool RechDichoRecursifDiviser(string mot, int debut=-1, int fin=-1)
+        {
+            
+            if (debut > fin || !dicoTrie.ContainsKey(mot.Length))
+            {
+                return false;
+            }
+            if (debut == -1 && fin == -1)
+            {
+                debut = 0;
+                fin = dicoTrie[mot.Length].Count - 1;
+            }
+            int milieu = (fin+debut) / 2;
+            string motMilieu = dicoTrie[mot.Length][milieu].ToLower().Trim();
+            if (mot.CompareTo(motMilieu)<0)
+            {
+                return RechDichoRecursifDiviser(mot, debut, milieu - 1);
+            }
+            else
+            {
+                if(mot.CompareTo(motMilieu)>0) 
+                {
+                    return RechDichoRecursifDiviser(mot, milieu + 1, fin);
+                }
+                else
+                {
+                    return true;
+                }
             }
         }
     }

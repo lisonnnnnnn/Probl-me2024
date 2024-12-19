@@ -54,7 +54,7 @@ public class Program
                 plateau.AfficherPlateauActif();
                 mot = Console.ReadLine();
 
-                if (mot != null && mot.Length >= 2 && !(Joueurs[i-1].Contain(mot)) && dictionnaire.RechDichoRecursif(mot) && plateau.Test_Plateau(mot))
+                if (mot != null && mot.Length >= 2 && !(Joueurs[i-1].Contain(mot)) && dictionnaire.RechDichoRecursifDiviser(mot) && plateau.Test_Plateau(mot))
                 {
                     Joueurs[i - 1].MotsTrouves.Add(mot);
                     Console.WriteLine("Bravo ! Un mot de plus !");
