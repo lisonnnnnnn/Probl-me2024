@@ -1,33 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\",
+  "WorkspaceRootPath": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\alphabet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\AppData\\Local\\SourceServer\\7df5388ab7c7665cb2e880324df5edab8b9ad54aac5bf578d25472f95862ca16\\Probl\u00E8me2024\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\users\\hp\\documents\\github\\probl-me2024\\probl\u00E8me2024\\alphabet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:alphabet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\dictionnaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\users\\hp\\documents\\github\\probl-me2024\\probl\u00E8me2024\\dictionnaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:dictionnaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\users\\hp\\documents\\github\\probl-me2024\\probl\u00E8me2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\users\\hp\\documents\\github\\probl-me2024\\probl\u00E8me2024\\de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\users\\hp\\documents\\github\\probl-me2024\\probl\u00E8me2024\\plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\users\\hp\\documents\\github\\probl-me2024\\probl\u00E8me2024\\joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:joueur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\TestUni_Boogle\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{141D82FD-75AB-40FC-990C-D61D5DCF4F05}|..\\TestUni_Boogle\\TestUni_Boogle.csproj|C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\TestUni_Boogle\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,15 +40,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\AppData\\Local\\SourceServer\\7df5388ab7c7665cb2e880324df5edab8b9ad54aac5bf578d25472f95862ca16\\Probl\u00E8me2024\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\7df5388ab7c7665cb2e880324df5edab8b9ad54aac5bf578d25472f95862ca16\\Probl\u00E8me2024\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\AppData\\Local\\SourceServer\\7df5388ab7c7665cb2e880324df5edab8b9ad54aac5bf578d25472f95862ca16\\Probl\u00E8me2024\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\SourceServer\\7df5388ab7c7665cb2e880324df5edab8b9ad54aac5bf578d25472f95862ca16\\Probl\u00E8me2024\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAhwAYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T22:48:06.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Dictionnaire.cs",
-              "DocumentMoniker": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Dictionnaire.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Dictionnaire.cs",
               "RelativeDocumentMoniker": "Dictionnaire.cs",
-              "ToolTip": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Dictionnaire.cs",
+              "ToolTip": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Dictionnaire.cs",
               "RelativeToolTip": "Dictionnaire.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -56,33 +72,35 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Program.cs",
+              "ToolTip": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T18:47:28.805Z"
+              "WhenOpened": "2024-12-18T18:47:28.805Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "De.cs",
-              "DocumentMoniker": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\De.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\De.cs",
               "RelativeDocumentMoniker": "De.cs",
-              "ToolTip": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\De.cs",
+              "ToolTip": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\De.cs",
               "RelativeToolTip": "De.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T18:47:28.372Z"
+              "WhenOpened": "2024-12-18T18:47:28.372Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Joueur.cs",
-              "DocumentMoniker": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Joueur.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Joueur.cs",
               "RelativeDocumentMoniker": "Joueur.cs",
-              "ToolTip": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Joueur.cs",
+              "ToolTip": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Joueur.cs",
               "RelativeToolTip": "Joueur.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -90,38 +108,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Plateau.cs",
-              "DocumentMoniker": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Plateau.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Plateau.cs",
               "RelativeDocumentMoniker": "Plateau.cs",
-              "ToolTip": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Plateau.cs",
+              "ToolTip": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Plateau.cs",
               "RelativeToolTip": "Plateau.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T18:47:28.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T18:47:28.807Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Alphabet.cs",
-              "DocumentMoniker": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Alphabet.cs",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Alphabet.cs",
               "RelativeDocumentMoniker": "Alphabet.cs",
-              "ToolTip": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Alphabet.cs",
+              "ToolTip": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Alphabet.cs",
               "RelativeToolTip": "Alphabet.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAiwB4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBwAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T19:59:40.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\TestUni_Boogle\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\TestUni_Boogle\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\TestUni_Boogle\\UnitTest1.cs",
               "ToolTip": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\TestUni_Boogle\\UnitTest1.cs",
-              "RelativeToolTip": "..\\..\\..\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\TestUni_Boogle\\UnitTest1.cs",
+              "RelativeToolTip": "..\\TestUni_Boogle\\UnitTest1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T18:47:28.819Z"

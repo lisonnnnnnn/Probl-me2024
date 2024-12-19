@@ -22,11 +22,11 @@ namespace Problème2024
             {
                 if (langue == "français")
                 {
-                    fichier = File.ReadAllLines("Lettres.txt");
+                    fichier = File.ReadAllLines(@"Lettres.txt");
                 }
                 else
                 {
-                    fichier = File.ReadAllLines("Lettres.txt");
+                    fichier = File.ReadAllLines(@"Lettres.txt");
                 }
             }
             catch (FileNotFoundException)

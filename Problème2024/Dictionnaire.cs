@@ -17,9 +17,9 @@ namespace Problème2024
             try
             {
                 if (langue.ToLower() == "english")
-                    fichierDico = File.ReadAllText("MotsPossiblesEN.txt");
+                    fichierDico = File.ReadAllText(@"MotsPossiblesEN.txt");
                 else
-                    fichierDico = File.ReadAllText("MotsPossiblesFR.txt");
+                    fichierDico = File.ReadAllText(@"MotsPossiblesFR.txt");
             }
             catch (FileNotFoundException)
             {
