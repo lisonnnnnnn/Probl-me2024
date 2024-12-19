@@ -16,6 +16,9 @@ namespace Problème2024
         public Alphabet(string langue)
         {
             string[] fichier;
+            this.lettres = new Lettre[26];
+            this.possibilites = new List<char>();
+
             if (langue == "français")
             {
                 fichier= File.ReadAllLines("Ressources\\Lettres.txt");
@@ -28,20 +31,12 @@ namespace Problème2024
             {
                 fichier[i] = fichier[i].Trim();
 
-            }
-
-            this.lettres = new Lettre[26];
-            for (int i = 0; i < fichier.Length; i++)
-            {
                 int indiceLastvirgule = fichier[i].LastIndexOf(";");
                 char LettreActuelle = Convert.ToChar(fichier[i].Substring(0, 1));
-                int valeur = Convert.ToInt32(fichier[i].Substring(2, indiceLastvirgule - 3)); //:cf fonctionnement Substring 
+                int valeur = Convert.ToInt32(fichier[i].Substring(2, indiceLastvirgule - 1)); //:cf fonctionnement Substring 
                 int occurenceMax = Convert.ToInt32(fichier[i].Substring(indiceLastvirgule + 1));
                 lettres[i] = new Lettre(LettreActuelle, valeur, occurenceMax);
-            }
-            this.possibilites = new List<char>();
-            foreach (Lettre l in lettres)
-            {
+
                 for (int i = 0; i < l.OccurenceMax; i++)
                 {
                     possibilites.Add(l.SymboleLettre);
@@ -76,12 +71,12 @@ namespace Problème2024
         }
         public int Valeur
         {
-            get { return valeur; }
+            get { return this.valeur; }
         }
 
         public int OccurenceMax
         {
-            get { return occurenceMax; }
+            get { return this.occurenceMax; }
         }
     }
 }

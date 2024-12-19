@@ -15,6 +15,7 @@ namespace Problème2024
         {
             this.langue = langue;
             string fichierDico="";
+
             if (langue == "english")
             {
                 fichierDico = File.ReadAllText("Ressources\\MotsPossiblesEN.txt");
@@ -23,7 +24,9 @@ namespace Problème2024
             {
                 fichierDico = File.ReadAllText("C:\\AlgoPooProjet\\Probl-me2024\\Problème2024\\Ressources\\MotsPossiblesFR.txt");
             }
+
             List<string> mots = new List<string>();
+
             while (fichierDico != null || fichierDico.Length > 0)
             {
                 int indexEspace = fichierDico.IndexOf(" ");
@@ -39,7 +42,7 @@ namespace Problème2024
                 }
                 else
                 {
-                    mots.Add(fichierDico.Trim());
+                    mots.Add(fichierDico);
                 }
             }
             mots.Sort();

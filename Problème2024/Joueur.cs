@@ -13,12 +13,12 @@ namespace Problème2024
         private List<string> motsTrouves;
         private Alphabet alphabet;
 
-        public Joueur(string nom, Alphabet alpha)
+        public Joueur(string nom, Alphabet alphabet)
         {
             this.nom = nom;
             this.score = 0;
             this.motsTrouves = new List<string>();
-            this.alphabet = alpha;
+            this.alphabet = alphabet;
         }
         public string Nom
         {
