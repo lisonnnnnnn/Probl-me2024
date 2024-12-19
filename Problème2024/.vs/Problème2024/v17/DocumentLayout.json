@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\alphabet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:alphabet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,11 +37,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Dictionnaire.cs",
               "DocumentMoniker": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Dictionnaire.cs",
               "RelativeDocumentMoniker": "Dictionnaire.cs",
@@ -49,20 +49,20 @@
               "RelativeToolTip": "Dictionnaire.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T19:56:33.959Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T19:56:33.959Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCgAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T18:47:28.805Z"
+              "WhenOpened": "2024-12-18T18:47:28.805Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Plateau.cs",
               "DocumentMoniker": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Plateau.cs",
               "RelativeDocumentMoniker": "Plateau.cs",
@@ -98,12 +98,11 @@
               "RelativeToolTip": "Plateau.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T18:47:28.807Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T18:47:28.807Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Alphabet.cs",
               "DocumentMoniker": "C:\\AlgoPooProjet\\Probl-me2024\\Probl\u00E8me2024\\Alphabet.cs",
               "RelativeDocumentMoniker": "Alphabet.cs",
