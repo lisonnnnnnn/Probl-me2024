@@ -163,7 +163,7 @@ namespace Problème2024
         }
         public string toString()
         {
-            return $"Ce dictionnaire est en {langue}, "; //: comment ça nombre de mots par longueur etle nombre de mots par symboleLettre
+            return $"Ce dictionnaire est en {langue}, "; //: comment ça nombre de mots par longueur et le nombre de mots par symboleLettre
         }
         public bool RechDichoRecursifBrutal(string mot, int indice = 0)
         {
