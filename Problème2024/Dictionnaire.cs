@@ -25,10 +25,12 @@ namespace Problème2024
             {
                 throw new Exception("Le fichier dictionnaire est introuvable.");
             }
+
             SortedList<char,List<string>> dico = new SortedList<char,List<string>>();
             int indexEspace;
             string motPotentiel;
             char premiereLettre;
+
             while (fichierDico != null || fichierDico.Length > 0)
             {
                 indexEspace = fichierDico.IndexOf(" ");
@@ -71,10 +73,13 @@ namespace Problème2024
                 return listeMots;
             }
             int milieu = listeMots.Count / 2;
+
             List<string> listeGauche=listeMots.GetRange(0, milieu);
             List<string> listeDroite = listeMots.GetRange(milieu, listeMots.Count - milieu);
+
             listeGauche=TriFusion(listeGauche);
             listeDroite=TriFusion(listeDroite);
+
             return Fusion(listeGauche, listeDroite);
         }
         public static List<string> Fusion(List<string> listeGauche, List<string> listeDroite)
