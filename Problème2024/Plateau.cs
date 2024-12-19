@@ -135,13 +135,13 @@ namespace Problème2024
                             {
                                 return true;
                             }
-                            plateauBinaire[pos.X, pos.Y] = true;
+                            plateauBinaire[posActuelle.X, posActuelle.Y] = true;
                             cheminExiste = cheminExiste || Test_Plateau(mot.Substring(1), new Position(i, j), plateauBinaire);
                             if (cheminExiste)
                             {
                                 return true;
                             }
-                            plateauBinaire[pos.X, pos.Y] = false;
+                            plateauBinaire[posActuelle.X, posActuelle.Y] = false;
                         }
                     }
                 }

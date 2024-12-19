@@ -44,7 +44,7 @@ namespace Problème2024
                 int occurenceMax = Convert.ToInt32(fichier[i].Substring(indiceLastvirgule + 1));
                 lettres[i] = new Lettre(LettreActuelle, valeur, occurenceMax);
 
-                for (int i = 0; i < lettres[i].OccurenceMax; i++)
+                for (int k = 0; k < lettres[i].OccurenceMax; k++)
                 {
                     possibilites.Add(lettres[i].SymboleLettre);
                 }

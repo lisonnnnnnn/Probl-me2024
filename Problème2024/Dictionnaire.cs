@@ -40,7 +40,7 @@ namespace Problème2024
 
                     if (motPotentiel != null && motPotentiel.Length >= 2)
                     {
-                        premiereLettre = motPotentiel[0].ToUpper();
+                        premiereLettre = motPotentiel[0];
                         if (!dico.ContainsKey(premiereLettre))
                         {
                             dico.Add(premiereLettre, new List<string>());
@@ -56,13 +56,13 @@ namespace Problème2024
                     {
                         dico.Add(fichierDico[0], new List<string>());
                     }
-                    dico.Add(fichierDico[0], fichierDico);
+                    dico[fichierDico[0]].Add(fichierDico);
                     fichierDico = "";
                 }
             }
-            foreach(List<string> listeparLettre in dico)
+            for (char  c = 'A'; c <= 'Z';c++)
             {
-                listeparLettre = TriFusion(listeparLettre);
+                dico[c] = TriFusion(dico[c]);
             }
             this.dicoTrie = dico;
         }
@@ -112,60 +112,7 @@ namespace Problème2024
             }
             return listeFinale;
         }
-        public Dictionnaire(string langue, string a)
-        {
-            this.langue = langue;
-            string fichierDico;
-
-            try
-            {
-                if (langue.ToLower() == "english")
-                    fichierDico = File.ReadAllText("MotsPossiblesEN.txt");
-                else
-                    fichierDico = File.ReadAllText("MotsPossiblesFR.txt");
-            }
-            catch (FileNotFoundException)
-            {
-                throw new Exception("Le fichier dictionnaire est introuvable.");
-            }
-
-            List<string> mots = new List<string>();
-
-            while (fichierDico != null || fichierDico.Length > 0)
-            {
-                int indexEspace = fichierDico.IndexOf(" ");
-                if (indexEspace != -1)
-                {
-                    string motPotentiel = fichierDico.Substring(0, indexEspace).Trim();
-
-                    if (motPotentiel != null && motPotentiel.Length >= 2)
-                    {
-                        mots.Add(motPotentiel.Trim());
-                    }
-                    fichierDico = fichierDico.Substring(indexEspace + 1);
-                }
-                else
-                {
-                    mots.Add(fichierDico);
-                }
-            }
-            mots.Sort();
-            this.dicoTrie = TrieNumeraire(mots);
-        }
-        public static SortedList<int, List<string>> TrieNumeraire(List<string> dico)
-        {
-            SortedList<int, List<string>> dicoTrie = new SortedList<int, List<string>>();
-            foreach (string mot in dico)
-            {
-                int longueur = mot.Length;
-                if (!dicoTrie.ContainsKey(longueur))
-                {
-                    dicoTrie.Add(longueur, new List<string>());
-                }
-                dicoTrie[longueur].Add(mot);
-            }
-            return dicoTrie;
-        }
+        
         public string toString()
         {
             return $"Ce dictionnaire est en {langue}, "; //: comment ça nombre de mots par longueur et le nombre de mots par symboleLettre
