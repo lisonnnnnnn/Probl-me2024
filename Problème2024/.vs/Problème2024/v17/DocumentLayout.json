@@ -3,10 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\hp\\AppData\\Local\\SourceServer\\7df5388ab7c7665cb2e880324df5edab8b9ad54aac5bf578d25472f95862ca16\\Probl\u00E8me2024\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\users\\hp\\documents\\github\\probl-me2024\\probl\u00E8me2024\\alphabet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\alphabet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 40875cdc448dffe4c498d347117a7c8d76db3eeb
       "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:alphabet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -14,11 +22,19 @@
       "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:dictionnaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\users\\hp\\documents\\github\\probl-me2024\\probl\u00E8me2024\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\users\\hp\\documents\\github\\probl-me2024\\probl\u00E8me2024\\de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:plateau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|c:\\algopooprojet\\probl-me2024\\probl\u00E8me2024\\de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 40875cdc448dffe4c498d347117a7c8d76db3eeb
       "RelativeMoniker": "D:0:0:{0336D64C-C034-4067-8A6F-AE4DBD1ACAAE}|Probl\u00E8me2024.csproj|solutionrelative:de.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -40,6 +56,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 0,
           "Children": [
             {
@@ -57,6 +74,12 @@
             },
             {
               "$type": "Document",
+=======
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+>>>>>>> 40875cdc448dffe4c498d347117a7c8d76db3eeb
               "DocumentIndex": 2,
               "Title": "Dictionnaire.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Dictionnaire.cs",
@@ -65,18 +88,21 @@
               "RelativeToolTip": "Dictionnaire.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T19:56:33.959Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T19:56:33.959Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Program.cs",
               "RelativeToolTip": "Program.cs",
+<<<<<<< HEAD
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAABAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAIAAAAAAAAAA==",
+>>>>>>> 40875cdc448dffe4c498d347117a7c8d76db3eeb
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T18:47:28.805Z",
               "EditorCaption": ""
@@ -108,7 +134,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 3,
+>>>>>>> 40875cdc448dffe4c498d347117a7c8d76db3eeb
               "Title": "Plateau.cs",
               "DocumentMoniker": "C:\\Users\\hp\\Documents\\GitHub\\Probl-me2024\\Probl\u00E8me2024\\Plateau.cs",
               "RelativeDocumentMoniker": "Plateau.cs",
