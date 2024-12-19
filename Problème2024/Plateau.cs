@@ -59,7 +59,7 @@ namespace Problème2024
         public void AfficherPlateauActif()
         {
             string frontiere = "";
-            for (int i=0 ; i < taillePlateau; i++)
+            for (int i = 0; i < taillePlateau; i++)
             {
                 frontiere += "+----";
             }
@@ -69,12 +69,12 @@ namespace Problème2024
             {
                 for (int k = 0; k < taillePlateau; k++)
                 {
-                    Console.Write("| "+plateauActif[j, k] + " ");
+                    Console.Write("| " + plateauActif[j, k] + " ");
                 }
                 Console.WriteLine("|");
                 Console.WriteLine(frontiere);
             }
-            Console.WriteLine(frontiere );
+            Console.WriteLine(frontiere);
         }
         /// <summary>
         /// La méthode Test_Plateau permet de vérifier si le mot entré par le joueur existe sur le plateau de jeu.
@@ -103,13 +103,12 @@ namespace Problème2024
         {
             bool cheminExiste = false;
             char premiereLettre = mot[0];
-            List<Position> posPossible=new List<Position>();
 
             if (plateauBinaire == null)
             {
-                plateauBinaire=new bool[taillePlateau, taillePlateau];
+                plateauBinaire = new bool[taillePlateau, taillePlateau];
             }
-            if (posActuelle==null)
+            if (posActuelle == null)
             {
                 for (int i = 0; i < taillePlateau; i++)
                 {
@@ -117,7 +116,9 @@ namespace Problème2024
                     {
                         if (plateauActif[i, j] == premiereLettre)
                         {
-                            posPossible.Add(new Position(i, j));
+                            plateauBinaire[posActuelle.X, posActuelle.Y] = true;
+                            cheminExiste = cheminExiste || Test_Plateau(mot.Substring(1), new Position(i, j), plateauBinaire);
+                            plateauBinaire[posActuelle.X, posActuelle.Y] = false;
                         }
                     }
                 }
@@ -130,27 +131,20 @@ namespace Problème2024
                     {
                         if ((i != posActuelle.X || j != posActuelle.Y) && i >= 0 && j >= 0 && i < taillePlateau && j < taillePlateau && !plateauBinaire[i, j] && premiereLettre == plateauActif[i, j])
                         {
-                            if (mot.Length > 1)
-                            {
-                                posPossible.Add(new Position(i, j));
-                            }
-                            else
+                            if (mot.Length == 1)
                             {
                                 return true;
                             }
+                            plateauBinaire[pos.X, pos.Y] = true;
+                            cheminExiste = cheminExiste || Test_Plateau(mot.Substring(1), new Position(i, j), plateauBinaire);
+                            if (cheminExiste)
+                            {
+                                return true;
+                            }
+                            plateauBinaire[pos.X, pos.Y] = false;
                         }
                     }
                 }
-            }
-            if(posPossible.Count == 0)
-            {
-                return false;
-            }
-            foreach (Position pos in posPossible)
-            {
-                plateauBinaire[pos.X, pos.Y] = true;
-                cheminExiste = cheminExiste || Test_Plateau(mot.Substring(1), pos, plateauBinaire);
-                plateauBinaire[pos.X, pos.Y] = 0;
             }
             return cheminExiste;
         }
@@ -174,3 +168,4 @@ namespace Problème2024
         }
     }
 }
+
