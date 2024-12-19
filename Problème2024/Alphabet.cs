@@ -18,15 +18,22 @@ namespace Problème2024
             string[] fichier;
             this.lettres = new Lettre[26];
             this.possibilites = new List<char>();
-
-            if (langue == "français")
+            try
             {
-                fichier= File.ReadAllLines("Ressources\\Lettres.txt");
+                if (langue == "français")
+                {
+                    fichier = File.ReadAllLines("Lettres.txt");
+                }
+                else
+                {
+                    fichier = File.ReadAllLines("Lettres.txt");
+                }
             }
-            else
+            catch (FileNotFoundException)
             {
-                fichier = File.ReadAllLines("Ressources\\Lettres.txt");
+                throw new Exception("Le fichier Lettres est introuvable.");
             }
+            
             for (int i = 0; i < fichier.Length; i++)
             {
                 fichier[i] = fichier[i].Trim();
@@ -37,9 +44,9 @@ namespace Problème2024
                 int occurenceMax = Convert.ToInt32(fichier[i].Substring(indiceLastvirgule + 1));
                 lettres[i] = new Lettre(LettreActuelle, valeur, occurenceMax);
 
-                for (int i = 0; i < l.OccurenceMax; i++)
+                for (int i = 0; i < lettres[i].OccurenceMax; i++)
                 {
-                    possibilites.Add(l.SymboleLettre);
+                    possibilites.Add(lettres[i].SymboleLettre);
                 }
             }
         }

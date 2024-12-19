@@ -7,4 +7,59 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove=".vs\Problème2024\FileContentIndex\**" />
+    <Compile Remove=".vs\Problème2024\v17\**" />
+    <EmbeddedResource Remove=".vs\Problème2024\FileContentIndex\**" />
+    <EmbeddedResource Remove=".vs\Problème2024\v17\**" />
+    <None Remove=".vs\Problème2024\FileContentIndex\**" />
+    <None Remove=".vs\Problème2024\v17\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net8.0\InProcessTempFiles\_Problème2024.g.cs" />
+    <Compile Include="obj\Debug\net8.0\Problème2024.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net8.0\Problème2024.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\net8.0\Problème2024.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net8.0\Problème2024.sourcelink.json" />
+    <Content Include="obj\Problème2024.csproj.nuget.dgspec.json" />
+    <Content Include="obj\project.assets.json" />
+    <Page Include="bin\Debug\net8.0\Lettres.txt" />
+    <Content Include="bin\Debug\net8.0\MotsPossiblesEN.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\net8.0\MotsPossiblesFR.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\net8.0\Problème2024.deps.json" />
+    <Content Include="bin\Debug\net8.0\Problème2024.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".vs\Problème2024\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\ProjectEvaluation\problème2024.strings.v9.bin" />
+    <None Include="bin\Debug\net8.0\Problème2024.dll" />
+    <None Include="bin\Debug\net8.0\Problème2024.exe" />
+    <None Include="bin\Debug\net8.0\Problème2024.pdb" />
+    <None Include="obj\Debug\.AssemblyReference.cache" />
+    <None Include="obj\Debug\net8.0\apphost.exe" />
+    <None Include="obj\Debug\net8.0\Problème2024.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net8.0\Problème2024.assets.cache" />
+    <None Include="obj\Debug\net8.0\Problème2024.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net8.0\Problème2024.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net8.0\Problème2024.dll" />
+    <None Include="obj\Debug\net8.0\Problème2024.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net8.0\Problème2024.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net8.0\Problème2024.pdb" />
+    <None Include="obj\Debug\net8.0\refint\Problème2024.dll" />
+    <None Include="obj\Debug\net8.0\ref\Problème2024.dll" />
+    <None Include="obj\Problème2024.csproj.nuget.g.props" />
+    <None Include="obj\Problème2024.csproj.nuget.g.targets" />
+    <None Include="obj\project.nuget.cache" />
+  </ItemGroup>
+
 </Project>

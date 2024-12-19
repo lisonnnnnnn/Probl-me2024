@@ -14,15 +14,18 @@ namespace Problème2024
         public Dictionnaire(string langue)
         {
             this.langue = langue;
-            string fichierDico="";
+            string fichierDico;
 
-            if (langue == "english")
+            try
             {
-                fichierDico = File.ReadAllText("Ressources\\MotsPossiblesEN.txt");
+                if (langue.ToLower() == "english")
+                    fichierDico = File.ReadAllText("MotsPossiblesEN.txt");
+                else
+                    fichierDico = File.ReadAllText("MotsPossiblesFR.txt");
             }
-            else 
+            catch (FileNotFoundException)
             {
-                fichierDico = File.ReadAllText("C:\\AlgoPooProjet\\Probl-me2024\\Problème2024\\Ressources\\MotsPossiblesFR.txt");
+                throw new Exception("Le fichier dictionnaire est introuvable.");
             }
 
             List<string> mots = new List<string>();
@@ -54,15 +57,11 @@ namespace Problème2024
             foreach (string mot in dico)
             {
                 int longueur = mot.Length;
-                if (dicoTrie.ContainsKey(longueur))
+                if (!dicoTrie.ContainsKey(longueur))
                 {
-                    dicoTrie[longueur].Add(mot);
+                    dicoTrie.Add(longueur, new List<string>());
                 }
-                else
-                {
-
-                    dicoTrie.Add(longueur, new List<string> { mot });
-                }
+                dicoTrie[longueur].Add(mot);
             }
             return dicoTrie;
         }
