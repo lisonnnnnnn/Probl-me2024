@@ -50,7 +50,7 @@ namespace Problème2024
             {
                 for (int j = 0; j < taillePlateau; j++)
                 {
-                    SetDeDes[indice] = De.Lance(r);
+                    SetDeDes[indice].Lance(r);
                     plateauActif[i, j] = setDeDes[indice].FaceVisible;
                     indice++;
                 }
