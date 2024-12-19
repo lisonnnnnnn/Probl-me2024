@@ -9,9 +9,105 @@ namespace Problème2024
     public class Dictionnaire
     {
         private string langue;
-        private SortedList<int,List<string>> dicoTrie;
-
+        private SortedList<char,List<string>> dicoTrie;
         public Dictionnaire(string langue)
+        {
+            this.langue = langue;
+            string fichierDico;
+            try
+            {
+                if (langue.ToLower() == "english")
+                    fichierDico = File.ReadAllText("MotsPossiblesEN.txt");
+                else
+                    fichierDico = File.ReadAllText("MotsPossiblesFR.txt");
+            }
+            catch (FileNotFoundException)
+            {
+                throw new Exception("Le fichier dictionnaire est introuvable.");
+            }
+            SortedList<char,List<string>> dico = new SortedList<char,List<string>>();
+            int indexEspace;
+            string motPotentiel;
+            char premiereLettre;
+            while (fichierDico != null || fichierDico.Length > 0)
+            {
+                indexEspace = fichierDico.IndexOf(" ");
+                if (indexEspace != -1)
+                {
+                    motPotentiel = fichierDico.Substring(0, indexEspace).Trim().ToUpper();
+
+                    if (motPotentiel != null && motPotentiel.Length >= 2)
+                    {
+                        premiereLettre = motPotentiel[0].ToUpper();
+                        if (!dico.ContainsKey(premiereLettre))
+                        {
+                            dico.Add(premiereLettre, new List<string>());
+                        }
+                        dico[premiereLettre].Add(motPotentiel);
+                    }
+                    fichierDico = fichierDico.Substring(indexEspace + 1);
+                }
+                else
+                {
+                    fichierDico = fichierDico.ToUpper();
+                    if (!dico.ContainsKey(fichierDico[0])) 
+                    {
+                        dico.Add(fichierDico[0], new List<string>());
+                    }
+                    dico.Add(fichierDico[0], fichierDico);
+                    fichierDico = "";
+                }
+            }
+            foreach(List<string> listeparLettre in dico)
+            {
+                listeparLettre = TriFusion(listeparLettre);
+            }
+            this.dicoTrie = dico;
+        }
+        public static List<string> TriFusion(List<string> listeMots)
+        {
+            if (listeMots.Count <= 1)
+            {
+                return listeMots;
+            }
+            int milieu = listeMots.Count / 2;
+            List<string> listeGauche=listeMots.GetRange(0, milieu);
+            List<string> listeDroite = listeMots.GetRange(milieu, listeMots.Count - milieu);
+            listeGauche=TriFusion(listeGauche);
+            listeDroite=TriFusion(listeDroite);
+            return TriFusion(listeGauche, listeDroite);
+        }
+        public static List<string> Fusion(List<string> listeGauche, List<string> listeDroite)
+        {
+            int indiceGauche = 0;
+            int indiceDroite = 0;
+            List<string> listeFinale = new List<string>();
+            while(indiceDroite < listeDroite.Count && indiceGauche < listeGauche.Count)
+            {
+                if (listeGauche[indiceGauche].CompareTo(listeDroite[indiceDroite])<=0)
+                {
+                    listeFinale.Add(listeGauche[indiceGauche]);
+                    indiceGauche++;
+                }
+                else
+                {
+                    listeFinale.Add(listeDroite[indiceDroite]);
+                    indiceDroite++;
+                }
+            }
+            while (indiceDroite < listeDroite.Count)
+            {
+                listeFinale.Add(listeDroite[indiceDroite]);
+                indiceDroite++;
+            }
+            while (indiceGauche < listeGauche.Count)
+            {
+                listeFinale.Add(listeGauche[indiceGauche]);
+                indiceGauche++;
+            }
+            return listeFinale;
+        }
+        public Dictionnaire(string langue, string a)
         {
             this.langue = langue;
             string fichierDico;
@@ -71,11 +167,12 @@ namespace Problème2024
         }
         public bool RechDichoRecursifBrutal(string mot, int indice = 0)
         {
-            if(!dicoTrie.ContainsKey(mot.Length) || indice >= dicoTrie[mot.Length].Count)
+            mot = mot.ToUpper();
+            if (!dicoTrie.ContainsKey(mot[0]) || indice >= dicoTrie[mot[0]].Count)
             {
                 return false;
             }
-            else if (dicoTrie[mot.Length][indice] != null && dicoTrie[mot.Length][indice] == mot)
+            else if (dicoTrie[mot[0]][indice] != null && dicoTrie[mot[0]][indice] == mot)
             {
                 return true;
             }
@@ -99,18 +196,18 @@ namespace Problème2024
         /// <returns>On analyse à chaque fois la moitié de la liste dans laquelle se trouve le mot, jusqu'à tomber sur les cas décris ci-dessus</returns>
         public bool RechDichoRecursifDiviser(string mot, int debut=-1, int fin=-1)
         {
-            
-            if (debut > fin || !dicoTrie.ContainsKey(mot.Length))
+            mot=mot.ToUpper();
+            if (debut > fin || !dicoTrie.ContainsKey(mot[0]))
             {
                 return false;
             }
             if (debut == -1 && fin == -1)
             {
                 debut = 0;
-                fin = dicoTrie[mot.Length].Count - 1;
+                fin = dicoTrie[mot[0]].Count - 1;
             }
             int milieu = (fin+debut) / 2;
-            string motMilieu = dicoTrie[mot.Length][milieu].ToLower().Trim();
+            string motMilieu = dicoTrie[mot[0]][milieu].ToUpper().Trim();
             if (mot.CompareTo(motMilieu)<0)
             {
                 return RechDichoRecursifDiviser(mot, debut, milieu - 1);
